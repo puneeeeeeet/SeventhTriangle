@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowboard Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Snowboard Collection</h1>
+        <div class="controls">
+            <button id="loadProductsBtn">Load Snowboards</button>
+            <div class="filter-sort-container">
+                <label for="sortBy">Sort By:</label>
+                <select id="sortBy">
+                    <option value="none">None</option>
+                    <option value="priceAsc">Price: Low to High</option>
+                    <option value="priceDesc">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="loading" class="hidden">Loading products...</div>
+        <div id="error" class="hidden"></div>
+        <div id="productContainer" class="product-grid">
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Snowboard Co.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
